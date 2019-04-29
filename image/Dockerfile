@@ -55,7 +55,7 @@ RUN \
   sudo -u isucon -i sh -c "cd /home/isucon/private_isu/webapp/ruby && bundle install" && \
   sudo -u isucon -i /home/isucon/.xbuild/node-install v4.4.3 /home/isucon/.local/node && \
   sudo -u isucon -i sh -c "cd /home/isucon/private_isu/webapp/node && npm install" && \
-  sudo -u isucon -i /home/isucon/.xbuild/go-install 1.6.2 /home/isucon/.local/go && \
+  sudo -u isucon -i /home/isucon/.xbuild/go-install 1.9.7 /home/isucon/.local/go && \
   sudo -u isucon -i sh -c "cd /home/isucon/private_isu/webapp/golang && ./setup.sh" && \
   sudo -u isucon -i curl -sL -o /home/isucon/private_isu/webapp/php/composer.phar http://getcomposer.org/composer.phar && \
   chmod +x /home/isucon/private_isu/webapp/php/composer.phar && \
