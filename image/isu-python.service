@@ -3,7 +3,7 @@ Description=isu-python
 After=syslog.target
 
 [Service]
-WorkingDirectory=/home/isucon/private_isu/webapp/python
+WorkingDirectory=/home/isucon/mlucon_proto/webapp/python
 EnvironmentFile=/home/isucon/env.sh
 Environment=FLASK_APP=app.py
 

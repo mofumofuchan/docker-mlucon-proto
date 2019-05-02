@@ -2,11 +2,11 @@ version: '2'
 services:
   bench:
     build: ./bench
-    image: matsuu/pixiv-isucon2016-bench
+    image: mofumofuchan/mlucon-proto-bench
     command: ["-t", "http://image/"]
   image:
     build: ./image
-    image: matsuu/pixiv-isucon2016-image
+    image: mofumofuchan/mlucon-proto-image
     ports:
       - "80:80"
     privileged: true
