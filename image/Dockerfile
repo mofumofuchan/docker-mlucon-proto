@@ -64,7 +64,7 @@ RUN \
   sudo -u isucon -i sh -c "cd /home/isucon/mlucon_proto/webapp/python && pip install -r requirements.freeze" && \
   rm -r /var/lib/apt/lists/* /home/isucon/backup
 
-COPY isu-python.service /etc/systemd/system/
+#COPY isu-python.service /etc/systemd/system/
 
 EXPOSE 80
 
