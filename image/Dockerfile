@@ -4,7 +4,7 @@ MAINTAINER you_oki1@yahoo.co.jp
 
 RUN \
   apt-get update && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y git gcc patch autoconf automake bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libmysqlclient-dev libpq-dev libcurl4-openssl-dev libpng12-0 libpng12-dev libmcrypt4 libmcrypt-dev libtidy-0.99-0 libtidy-dev libxml2-dev libxslt1-dev readline-common curl pkg-config mysql-server memcached nginx sudo && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y git gcc patch autoconf automake bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libmysqlclient-dev libpq-dev libcurl4-openssl-dev libpng12-0 libpng12-dev libmcrypt4 libmcrypt-dev libtidy-0.99-0 libtidy-dev libxml2-dev libxslt1-dev readline-common curl pkg-config mysql-server memcached nginx sudo unzip && \
   cp -p /usr/share/zoneinfo/Japan /etc/localtime && \
   echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list && \
   echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list && \
