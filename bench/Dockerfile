@@ -14,7 +14,7 @@ RUN \
   go install github.com/mofumofuchan/mlucon-proto/benchmarker && \
   ( \
     cd /opt/go/src/github.com/mofumofuchan/mlucon-proto/benchmarker/userdata/ && \
-    curl -sLO https://github.com/mofumofuchan/mlucon-proto/releases/download/img/img.zip && \
+    curl -sLO https://github.com/mofumofuchan/mlucon-proto/releases/download/img2/img.zip && \
     unzip img.zip && \
     rm img.zip \
   )

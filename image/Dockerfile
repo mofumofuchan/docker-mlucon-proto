@@ -45,7 +45,7 @@ RUN \
   ( cd /home/isucon/repos/mlucon_proto.git/ && git init && git add . && git config --global user.email 'test@example.com' && git config --global user.name 'admin' && git commit -m 'Initial commit' ) && \
   git clone file:///home/isucon/repos/mlucon_proto.git /home/isucon/mlucon_proto && \
   mkdir /home/isucon/backup/ && \
-  curl -sL https://github.com/mofumofuchan/mlucon-proto/releases/download/img/dump.sql.bz2 > /home/isucon/backup/mysqldump.sql.bz2 && \
+  curl -sL https://github.com/mofumofuchan/mlucon-proto/releases/download/img2/dump.sql.bz2 > /home/isucon/backup/mysqldump.sql.bz2 && \
   service mysql start && \
   bzcat /home/isucon/backup/mysqldump.sql.bz2 | mysql -u root && \
   service mysql stop && \
