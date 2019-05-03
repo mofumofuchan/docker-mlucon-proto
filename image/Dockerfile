@@ -14,7 +14,7 @@ RUN \
   apt-get clean && \
   groupadd wheel && \
   useradd -G wheel isucon -s /bin/bash && \
-  git clone https://github.com/mofumofuchan/mlucon-proto.git /home/isucon/repos/mlucon_proto.git && \
+  git clone -b develop https://github.com/mofumofuchan/mlucon-proto.git /home/isucon/repos/mlucon_proto.git && \
   git clone https://github.com/mofumofuchan/mlucon-proto-python.git /home/isucon/repos/mlucon_proto.git/webapp/python && \
   cp /home/isucon/repos/mlucon_proto.git/provisioning/image/files/etc/profile.d/bashrc /home/isucon/.profile && \
   chown isucon:isucon /home/isucon/.profile && \
